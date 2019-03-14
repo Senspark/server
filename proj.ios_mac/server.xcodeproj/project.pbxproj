@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD05A9CC205A2FE2004FD335 /* DataSyncer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD05A9CA205A2FE2004FD335 /* DataSyncer.cpp */; };
+		AD05A9CD205A2FE2004FD335 /* DataSyncer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD05A9CB205A2FE2004FD335 /* DataSyncer.hpp */; };
+		AD05A9D0205A3130004FD335 /* DataResolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD05A9CE205A3130004FD335 /* DataResolver.cpp */; };
+		AD05A9D1205A3130004FD335 /* DataResolver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD05A9CF205A3130004FD335 /* DataResolver.hpp */; };
+		AD05A9D5205A5148004FD335 /* DataFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD05A9D3205A5148004FD335 /* DataFetcher.cpp */; };
+		AD05A9D6205A5148004FD335 /* DataFetcher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD05A9D4205A5148004FD335 /* DataFetcher.hpp */; };
+		AD05A9D8205A51AD004FD335 /* IDataTransfer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD05A9D7205A51AD004FD335 /* IDataTransfer.hpp */; };
+		AD05A9DD205A5512004FD335 /* DataPusher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD05A9DB205A5512004FD335 /* DataPusher.cpp */; };
+		AD05A9DE205A5512004FD335 /* DataPusher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD05A9DC205A5512004FD335 /* DataPusher.hpp */; };
+		AD16B38B205126390023620C /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B332205126380023620C /* Bridge.cpp */; };
+		AD16B38D205126390023620C /* Bridge.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B333205126380023620C /* Bridge.hpp */; };
+		AD16B38F205126390023620C /* EventDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B334205126380023620C /* EventDispatcher.cpp */; };
+		AD16B391205126390023620C /* EventDispatcher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B335205126380023620C /* EventDispatcher.hpp */; };
+		AD16B395205126390023620C /* IEventDispatcher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B337205126380023620C /* IEventDispatcher.hpp */; };
+		AD16B397205126390023620C /* IListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B338205126380023620C /* IListener.hpp */; };
+		AD16B399205126390023620C /* IRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B339205126380023620C /* IRequest.cpp */; };
+		AD16B39B205126390023620C /* IRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B33A205126380023620C /* IRequest.hpp */; };
+		AD16B3B1205126390023620C /* Forward.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B346205126380023620C /* Forward.hpp */; };
+		AD16B3B3205126390023620C /* ConnectionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B348205126380023620C /* ConnectionListener.cpp */; };
+		AD16B3B5205126390023620C /* ConnectionListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B349205126380023620C /* ConnectionListener.hpp */; };
+		AD16B3B7205126390023620C /* ConnectionLostListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B34A205126380023620C /* ConnectionLostListener.cpp */; };
+		AD16B3B9205126390023620C /* ConnectionLostListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B34B205126380023620C /* ConnectionLostListener.hpp */; };
+		AD16B3BB205126390023620C /* ExtensionResponseListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B34C205126380023620C /* ExtensionResponseListener.cpp */; };
+		AD16B3BD205126390023620C /* ExtensionResponseListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B34D205126380023620C /* ExtensionResponseListener.hpp */; };
+		AD16B3BF205126390023620C /* LoginErrorListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B34E205126380023620C /* LoginErrorListener.cpp */; };
+		AD16B3C1205126390023620C /* LoginErrorListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B34F205126380023620C /* LoginErrorListener.hpp */; };
+		AD16B3C3205126390023620C /* LoginListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B350205126380023620C /* LoginListener.cpp */; };
+		AD16B3C5205126390023620C /* LoginListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B351205126380023620C /* LoginListener.hpp */; };
+		AD16B3C7205126390023620C /* LogoutListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B352205126380023620C /* LogoutListener.cpp */; };
+		AD16B3C9205126390023620C /* LogoutListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B353205126380023620C /* LogoutListener.hpp */; };
+		AD16B3CB205126390023620C /* PingPongListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B354205126380023620C /* PingPongListener.cpp */; };
+		AD16B3CD205126390023620C /* PingPongListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B355205126380023620C /* PingPongListener.hpp */; };
+		AD16B3CF205126390023620C /* RoomAddListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B356205126380023620C /* RoomAddListener.cpp */; };
+		AD16B3D1205126390023620C /* RoomAddListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B357205126380023620C /* RoomAddListener.hpp */; };
+		AD16B3D3205126390023620C /* RoomCreationErrorListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B358205126380023620C /* RoomCreationErrorListener.cpp */; };
+		AD16B3D5205126390023620C /* RoomCreationErrorListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B359205126380023620C /* RoomCreationErrorListener.hpp */; };
+		AD16B3D7205126390023620C /* RoomJoinErrorListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B35A205126380023620C /* RoomJoinErrorListener.cpp */; };
+		AD16B3D9205126390023620C /* RoomJoinErrorListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B35B205126380023620C /* RoomJoinErrorListener.hpp */; };
+		AD16B3DB205126390023620C /* RoomJoinListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B35C205126380023620C /* RoomJoinListener.cpp */; };
+		AD16B3DD205126390023620C /* RoomJoinListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B35D205126380023620C /* RoomJoinListener.hpp */; };
+		AD16B3DF205126390023620C /* RoomRemoveListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B35E205126380023620C /* RoomRemoveListener.cpp */; };
+		AD16B3E1205126390023620C /* RoomRemoveListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B35F205126380023620C /* RoomRemoveListener.hpp */; };
+		AD16B3E3205126390023620C /* SetRoomVariablesListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B360205126380023620C /* SetRoomVariablesListener.cpp */; };
+		AD16B3E5205126390023620C /* SetRoomVariablesListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B361205126380023620C /* SetRoomVariablesListener.hpp */; };
+		AD16B3E7205126390023620C /* SetUserVariablesListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B362205126380023620C /* SetUserVariablesListener.cpp */; };
+		AD16B3E9205126390023620C /* SetUserVariablesListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B363205126380023620C /* SetUserVariablesListener.hpp */; };
+		AD16B3EB205126390023620C /* UserEnterRoomListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B364205126380023620C /* UserEnterRoomListener.cpp */; };
+		AD16B3ED205126390023620C /* UserEnterRoomListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B365205126380023620C /* UserEnterRoomListener.hpp */; };
+		AD16B3EF205126390023620C /* UserExitRoomListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B366205126380023620C /* UserExitRoomListener.cpp */; };
+		AD16B3F1205126390023620C /* UserExitRoomListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B367205126380023620C /* UserExitRoomListener.hpp */; };
+		AD16B415205126390023620C /* Macro.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B37A205126380023620C /* Macro.hpp */; };
+		AD16B417205126390023620C /* KeepAliveRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B37C205126380023620C /* KeepAliveRequest.cpp */; };
+		AD16B419205126390023620C /* KeepAliveRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B37D205126380023620C /* KeepAliveRequest.hpp */; };
+		AD16B41B205126390023620C /* RemoveUserRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B37E205126380023620C /* RemoveUserRequest.cpp */; };
+		AD16B41D205126390023620C /* RemoveUserRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B37F205126380023620C /* RemoveUserRequest.hpp */; };
+		AD16B41F205126390023620C /* SetGoldRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B380205126380023620C /* SetGoldRequest.cpp */; };
+		AD16B421205126390023620C /* SetGoldRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B381205126380023620C /* SetGoldRequest.hpp */; };
+		AD16B423205126390023620C /* SetRubyRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B382205126380023620C /* SetRubyRequest.cpp */; };
+		AD16B425205126390023620C /* SetRubyRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B383205126380023620C /* SetRubyRequest.hpp */; };
+		AD16B427205126390023620C /* UpdateDataRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B384205126380023620C /* UpdateDataRequest.cpp */; };
+		AD16B429205126390023620C /* UpdateDataRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B385205126380023620C /* UpdateDataRequest.hpp */; };
+		AD16B42B205126390023620C /* DataRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B386205126380023620C /* DataRequest.cpp */; };
+		AD16B42D205126390023620C /* DataRequest.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B387205126380023620C /* DataRequest.hpp */; };
+		AD16B42F205126390023620C /* AsyncManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B389205126380023620C /* AsyncManager.hpp */; };
+		AD16B431205126390023620C /* BiMap.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B38A205126380023620C /* BiMap.hpp */; };
+		AD16B457205126810023620C /* IConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B438205126810023620C /* IConnection.hpp */; };
+		AD16B459205126810023620C /* ILoginInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B439205126810023620C /* ILoginInfo.hpp */; };
+		AD16B45B205126810023620C /* IConnectionManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B43A205126810023620C /* IConnectionManager.hpp */; };
+		AD16B45D205126810023620C /* IData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B43B205126810023620C /* IData.hpp */; };
+		AD16B45F205126810023620C /* IProperty.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B43C205126810023620C /* IProperty.hpp */; };
+		AD16B467205126810023620C /* ConnectionManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B440205126810023620C /* ConnectionManager.hpp */; };
+		AD16B46B205126810023620C /* ServerConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B442205126810023620C /* ServerConnection.hpp */; };
+		AD16B471205126810023620C /* SFGoldObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B445205126810023620C /* SFGoldObserver.cpp */; };
+		AD16B473205126810023620C /* SFGoldObserver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B446205126810023620C /* SFGoldObserver.hpp */; };
+		AD16B475205126810023620C /* LoginFlow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B447205126810023620C /* LoginFlow.cpp */; };
+		AD16B477205126810023620C /* LoginFlow.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B448205126810023620C /* LoginFlow.hpp */; };
+		AD16B47B205126810023620C /* SFRubyObserver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B44A205126810023620C /* SFRubyObserver.hpp */; };
+		AD16B47D205126810023620C /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B44B205126810023620C /* Data.cpp */; };
+		AD16B47F205126810023620C /* Data.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B44C205126810023620C /* Data.hpp */; };
+		AD16B481205126810023620C /* Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B44D205126810023620C /* Property.cpp */; };
+		AD16B483205126810023620C /* Property.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B44E205126810023620C /* Property.hpp */; };
+		AD16B486205126970023620C /* SFRubyObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B449205126810023620C /* SFRubyObserver.cpp */; };
+		AD16B48820512A190023620C /* IBridge.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B48720512A190023620C /* IBridge.hpp */; };
+		AD16B48A20512BA60023620C /* ServerConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B441205126810023620C /* ServerConnection.cpp */; };
+		AD16B48F205131210023620C /* ConnectionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B43F205126810023620C /* ConnectionManager.cpp */; };
+		AD16B4932051374F0023620C /* RequestHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD16B4912051374F0023620C /* RequestHandler.cpp */; };
+		AD16B4952051374F0023620C /* RequestHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B4922051374F0023620C /* RequestHandler.hpp */; };
+		AD16B498205137980023620C /* IRequestHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD16B497205137980023620C /* IRequestHandler.hpp */; };
+		AD2FB39720591DEA00140ED7 /* ExponentialBackoffOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD2FB39520591DEA00140ED7 /* ExponentialBackoffOptions.cpp */; };
+		AD2FB39820591DEA00140ED7 /* ExponentialBackoffOptions.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD2FB39620591DEA00140ED7 /* ExponentialBackoffOptions.hpp */; };
+		AD2FB39B2059206700140ED7 /* ExponentialBackoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD2FB3992059206700140ED7 /* ExponentialBackoff.cpp */; };
+		AD2FB39C2059206700140ED7 /* ExponentialBackoff.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD2FB39A2059206700140ED7 /* ExponentialBackoff.hpp */; };
+		AD2FB39F205928F000140ED7 /* RandomHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD2FB39D205928F000140ED7 /* RandomHelper.cpp */; };
+		AD2FB3A0205928F000140ED7 /* RandomHelper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD2FB39E205928F000140ED7 /* RandomHelper.hpp */; };
+		AD2FB3A620592DD800140ED7 /* ConnectionState.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD2FB3A520592DD800140ED7 /* ConnectionState.hpp */; };
+		AD2FB3A92059306C00140ED7 /* GuardedConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD2FB3A72059306C00140ED7 /* GuardedConnection.cpp */; };
+		AD2FB3AA2059306C00140ED7 /* GuardedConnection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD2FB3A82059306C00140ED7 /* GuardedConnection.hpp */; };
+		AD56C929205B62CA0011A0DB /* ILogger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD56C927205B62CA0011A0DB /* ILogger.hpp */; };
+		AD56C92C205B657E0011A0DB /* LogManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD56C92A205B657E0011A0DB /* LogManager.cpp */; };
+		AD56C92D205B657E0011A0DB /* LogManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD56C92B205B657E0011A0DB /* LogManager.hpp */; };
+		AD56C92F205B65AD0011A0DB /* ILogManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD56C92E205B65AD0011A0DB /* ILogManager.hpp */; };
+		AD56C932205B67940011A0DB /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD56C930205B67940011A0DB /* Logger.cpp */; };
+		AD56C933205B67940011A0DB /* Logger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AD56C931205B67940011A0DB /* Logger.hpp */; };
+		ADA19A4B20526DE5002BAB67 /* LogoutFlow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADA19A4920526DE5002BAB67 /* LogoutFlow.cpp */; };
+		ADA19A4D20526DE5002BAB67 /* LogoutFlow.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADA19A4A20526DE5002BAB67 /* LogoutFlow.hpp */; };
+		ADF04F642060B397009926E2 /* HandshakeListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADF04F622060B397009926E2 /* HandshakeListener.cpp */; };
+		ADF04F652060B397009926E2 /* HandshakeListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADF04F632060B397009926E2 /* HandshakeListener.hpp */; };
+		ADF04F682060B4BB009926E2 /* SocketErrorListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADF04F662060B4BB009926E2 /* SocketErrorListener.cpp */; };
+		ADF04F692060B4BB009926E2 /* SocketErrorListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADF04F672060B4BB009926E2 /* SocketErrorListener.hpp */; };
+		ADF04F6C2060B623009926E2 /* ConnectionRetryListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADF04F6A2060B623009926E2 /* ConnectionRetryListener.cpp */; };
+		ADF04F6D2060B623009926E2 /* ConnectionRetryListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADF04F6B2060B623009926E2 /* ConnectionRetryListener.hpp */; };
+		ADF04F702060B7A8009926E2 /* ConnectionResumeListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADF04F6E2060B7A8009926E2 /* ConnectionResumeListener.cpp */; };
+		ADF04F712060B7A8009926E2 /* ConnectionResumeListener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ADF04F6F2060B7A8009926E2 /* ConnectionResumeListener.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C43A8041BDDDF1800D0597F /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6FC1CA8E1CEAB7D300DCDC8E /* server.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = server.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD05A9CA205A2FE2004FD335 /* DataSyncer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataSyncer.cpp; sourceTree = "<group>"; };
+		AD05A9CB205A2FE2004FD335 /* DataSyncer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataSyncer.hpp; sourceTree = "<group>"; };
+		AD05A9CE205A3130004FD335 /* DataResolver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataResolver.cpp; sourceTree = "<group>"; };
+		AD05A9CF205A3130004FD335 /* DataResolver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataResolver.hpp; sourceTree = "<group>"; };
+		AD05A9D2205A319C004FD335 /* IDataResolver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IDataResolver.hpp; sourceTree = "<group>"; };
+		AD05A9D3205A5148004FD335 /* DataFetcher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataFetcher.cpp; sourceTree = "<group>"; };
+		AD05A9D4205A5148004FD335 /* DataFetcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataFetcher.hpp; sourceTree = "<group>"; };
+		AD05A9D7205A51AD004FD335 /* IDataTransfer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IDataTransfer.hpp; sourceTree = "<group>"; };
+		AD05A9DB205A5512004FD335 /* DataPusher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataPusher.cpp; sourceTree = "<group>"; };
+		AD05A9DC205A5512004FD335 /* DataPusher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataPusher.hpp; sourceTree = "<group>"; };
+		AD16B332205126380023620C /* Bridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge.cpp; sourceTree = "<group>"; };
+		AD16B333205126380023620C /* Bridge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bridge.hpp; sourceTree = "<group>"; };
+		AD16B334205126380023620C /* EventDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventDispatcher.cpp; sourceTree = "<group>"; };
+		AD16B335205126380023620C /* EventDispatcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EventDispatcher.hpp; sourceTree = "<group>"; };
+		AD16B337205126380023620C /* IEventDispatcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IEventDispatcher.hpp; sourceTree = "<group>"; };
+		AD16B338205126380023620C /* IListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IListener.hpp; sourceTree = "<group>"; };
+		AD16B339205126380023620C /* IRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRequest.cpp; sourceTree = "<group>"; };
+		AD16B33A205126380023620C /* IRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRequest.hpp; sourceTree = "<group>"; };
+		AD16B346205126380023620C /* Forward.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Forward.hpp; sourceTree = "<group>"; };
+		AD16B348205126380023620C /* ConnectionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionListener.cpp; sourceTree = "<group>"; };
+		AD16B349205126380023620C /* ConnectionListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionListener.hpp; sourceTree = "<group>"; };
+		AD16B34A205126380023620C /* ConnectionLostListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionLostListener.cpp; sourceTree = "<group>"; };
+		AD16B34B205126380023620C /* ConnectionLostListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionLostListener.hpp; sourceTree = "<group>"; };
+		AD16B34C205126380023620C /* ExtensionResponseListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExtensionResponseListener.cpp; sourceTree = "<group>"; };
+		AD16B34D205126380023620C /* ExtensionResponseListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ExtensionResponseListener.hpp; sourceTree = "<group>"; };
+		AD16B34E205126380023620C /* LoginErrorListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoginErrorListener.cpp; sourceTree = "<group>"; };
+		AD16B34F205126380023620C /* LoginErrorListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoginErrorListener.hpp; sourceTree = "<group>"; };
+		AD16B350205126380023620C /* LoginListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoginListener.cpp; sourceTree = "<group>"; };
+		AD16B351205126380023620C /* LoginListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoginListener.hpp; sourceTree = "<group>"; };
+		AD16B352205126380023620C /* LogoutListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogoutListener.cpp; sourceTree = "<group>"; };
+		AD16B353205126380023620C /* LogoutListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogoutListener.hpp; sourceTree = "<group>"; };
+		AD16B354205126380023620C /* PingPongListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PingPongListener.cpp; sourceTree = "<group>"; };
+		AD16B355205126380023620C /* PingPongListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PingPongListener.hpp; sourceTree = "<group>"; };
+		AD16B356205126380023620C /* RoomAddListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoomAddListener.cpp; sourceTree = "<group>"; };
+		AD16B357205126380023620C /* RoomAddListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoomAddListener.hpp; sourceTree = "<group>"; };
+		AD16B358205126380023620C /* RoomCreationErrorListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoomCreationErrorListener.cpp; sourceTree = "<group>"; };
+		AD16B359205126380023620C /* RoomCreationErrorListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoomCreationErrorListener.hpp; sourceTree = "<group>"; };
+		AD16B35A205126380023620C /* RoomJoinErrorListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoomJoinErrorListener.cpp; sourceTree = "<group>"; };
+		AD16B35B205126380023620C /* RoomJoinErrorListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoomJoinErrorListener.hpp; sourceTree = "<group>"; };
+		AD16B35C205126380023620C /* RoomJoinListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoomJoinListener.cpp; sourceTree = "<group>"; };
+		AD16B35D205126380023620C /* RoomJoinListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoomJoinListener.hpp; sourceTree = "<group>"; };
+		AD16B35E205126380023620C /* RoomRemoveListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoomRemoveListener.cpp; sourceTree = "<group>"; };
+		AD16B35F205126380023620C /* RoomRemoveListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoomRemoveListener.hpp; sourceTree = "<group>"; };
+		AD16B360205126380023620C /* SetRoomVariablesListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetRoomVariablesListener.cpp; sourceTree = "<group>"; };
+		AD16B361205126380023620C /* SetRoomVariablesListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SetRoomVariablesListener.hpp; sourceTree = "<group>"; };
+		AD16B362205126380023620C /* SetUserVariablesListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetUserVariablesListener.cpp; sourceTree = "<group>"; };
+		AD16B363205126380023620C /* SetUserVariablesListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SetUserVariablesListener.hpp; sourceTree = "<group>"; };
+		AD16B364205126380023620C /* UserEnterRoomListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserEnterRoomListener.cpp; sourceTree = "<group>"; };
+		AD16B365205126380023620C /* UserEnterRoomListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UserEnterRoomListener.hpp; sourceTree = "<group>"; };
+		AD16B366205126380023620C /* UserExitRoomListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserExitRoomListener.cpp; sourceTree = "<group>"; };
+		AD16B367205126380023620C /* UserExitRoomListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UserExitRoomListener.hpp; sourceTree = "<group>"; };
+		AD16B37A205126380023620C /* Macro.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Macro.hpp; sourceTree = "<group>"; };
+		AD16B37C205126380023620C /* KeepAliveRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KeepAliveRequest.cpp; sourceTree = "<group>"; };
+		AD16B37D205126380023620C /* KeepAliveRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeepAliveRequest.hpp; sourceTree = "<group>"; };
+		AD16B37E205126380023620C /* RemoveUserRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveUserRequest.cpp; sourceTree = "<group>"; };
+		AD16B37F205126380023620C /* RemoveUserRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RemoveUserRequest.hpp; sourceTree = "<group>"; };
+		AD16B380205126380023620C /* SetGoldRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetGoldRequest.cpp; sourceTree = "<group>"; };
+		AD16B381205126380023620C /* SetGoldRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SetGoldRequest.hpp; sourceTree = "<group>"; };
+		AD16B382205126380023620C /* SetRubyRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetRubyRequest.cpp; sourceTree = "<group>"; };
+		AD16B383205126380023620C /* SetRubyRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SetRubyRequest.hpp; sourceTree = "<group>"; };
+		AD16B384205126380023620C /* UpdateDataRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpdateDataRequest.cpp; sourceTree = "<group>"; };
+		AD16B385205126380023620C /* UpdateDataRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UpdateDataRequest.hpp; sourceTree = "<group>"; };
+		AD16B386205126380023620C /* DataRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataRequest.cpp; sourceTree = "<group>"; };
+		AD16B387205126380023620C /* DataRequest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataRequest.hpp; sourceTree = "<group>"; };
+		AD16B389205126380023620C /* AsyncManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AsyncManager.hpp; sourceTree = "<group>"; };
+		AD16B38A205126380023620C /* BiMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BiMap.hpp; sourceTree = "<group>"; };
+		AD16B438205126810023620C /* IConnection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IConnection.hpp; sourceTree = "<group>"; };
+		AD16B439205126810023620C /* ILoginInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ILoginInfo.hpp; sourceTree = "<group>"; };
+		AD16B43A205126810023620C /* IConnectionManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IConnectionManager.hpp; sourceTree = "<group>"; };
+		AD16B43B205126810023620C /* IData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IData.hpp; sourceTree = "<group>"; };
+		AD16B43C205126810023620C /* IProperty.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IProperty.hpp; sourceTree = "<group>"; };
+		AD16B43F205126810023620C /* ConnectionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionManager.cpp; sourceTree = "<group>"; };
+		AD16B440205126810023620C /* ConnectionManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionManager.hpp; sourceTree = "<group>"; };
+		AD16B441205126810023620C /* ServerConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerConnection.cpp; sourceTree = "<group>"; };
+		AD16B442205126810023620C /* ServerConnection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ServerConnection.hpp; sourceTree = "<group>"; };
+		AD16B445205126810023620C /* SFGoldObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SFGoldObserver.cpp; sourceTree = "<group>"; };
+		AD16B446205126810023620C /* SFGoldObserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SFGoldObserver.hpp; sourceTree = "<group>"; };
+		AD16B447205126810023620C /* LoginFlow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoginFlow.cpp; sourceTree = "<group>"; };
+		AD16B448205126810023620C /* LoginFlow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoginFlow.hpp; sourceTree = "<group>"; };
+		AD16B449205126810023620C /* SFRubyObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SFRubyObserver.cpp; sourceTree = "<group>"; };
+		AD16B44A205126810023620C /* SFRubyObserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SFRubyObserver.hpp; sourceTree = "<group>"; };
+		AD16B44B205126810023620C /* Data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		AD16B44C205126810023620C /* Data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
+		AD16B44D205126810023620C /* Property.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Property.cpp; sourceTree = "<group>"; };
+		AD16B44E205126810023620C /* Property.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Property.hpp; sourceTree = "<group>"; };
+		AD16B48720512A190023620C /* IBridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IBridge.hpp; sourceTree = "<group>"; };
+		AD16B4912051374F0023620C /* RequestHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RequestHandler.cpp; sourceTree = "<group>"; };
+		AD16B4922051374F0023620C /* RequestHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RequestHandler.hpp; sourceTree = "<group>"; };
+		AD16B497205137980023620C /* IRequestHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IRequestHandler.hpp; sourceTree = "<group>"; };
+		AD2FB39520591DEA00140ED7 /* ExponentialBackoffOptions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExponentialBackoffOptions.cpp; sourceTree = "<group>"; };
+		AD2FB39620591DEA00140ED7 /* ExponentialBackoffOptions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExponentialBackoffOptions.hpp; sourceTree = "<group>"; };
+		AD2FB3992059206700140ED7 /* ExponentialBackoff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExponentialBackoff.cpp; sourceTree = "<group>"; };
+		AD2FB39A2059206700140ED7 /* ExponentialBackoff.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExponentialBackoff.hpp; sourceTree = "<group>"; };
+		AD2FB39D205928F000140ED7 /* RandomHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RandomHelper.cpp; sourceTree = "<group>"; };
+		AD2FB39E205928F000140ED7 /* RandomHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RandomHelper.hpp; sourceTree = "<group>"; };
+		AD2FB3A520592DD800140ED7 /* ConnectionState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionState.hpp; sourceTree = "<group>"; };
+		AD2FB3A72059306C00140ED7 /* GuardedConnection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuardedConnection.cpp; sourceTree = "<group>"; };
+		AD2FB3A82059306C00140ED7 /* GuardedConnection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GuardedConnection.hpp; sourceTree = "<group>"; };
+		AD56C927205B62CA0011A0DB /* ILogger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ILogger.hpp; sourceTree = "<group>"; };
+		AD56C92A205B657E0011A0DB /* LogManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LogManager.cpp; sourceTree = "<group>"; };
+		AD56C92B205B657E0011A0DB /* LogManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LogManager.hpp; sourceTree = "<group>"; };
+		AD56C92E205B65AD0011A0DB /* ILogManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ILogManager.hpp; sourceTree = "<group>"; };
+		AD56C930205B67940011A0DB /* Logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		AD56C931205B67940011A0DB /* Logger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		ADA19A4920526DE5002BAB67 /* LogoutFlow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LogoutFlow.cpp; sourceTree = "<group>"; };
+		ADA19A4A20526DE5002BAB67 /* LogoutFlow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LogoutFlow.hpp; sourceTree = "<group>"; };
+		ADF04F622060B397009926E2 /* HandshakeListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HandshakeListener.cpp; sourceTree = "<group>"; };
+		ADF04F632060B397009926E2 /* HandshakeListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HandshakeListener.hpp; sourceTree = "<group>"; };
+		ADF04F662060B4BB009926E2 /* SocketErrorListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SocketErrorListener.cpp; sourceTree = "<group>"; };
+		ADF04F672060B4BB009926E2 /* SocketErrorListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SocketErrorListener.hpp; sourceTree = "<group>"; };
+		ADF04F6A2060B623009926E2 /* ConnectionRetryListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionRetryListener.cpp; sourceTree = "<group>"; };
+		ADF04F6B2060B623009926E2 /* ConnectionRetryListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionRetryListener.hpp; sourceTree = "<group>"; };
+		ADF04F6E2060B7A8009926E2 /* ConnectionResumeListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionResumeListener.cpp; sourceTree = "<group>"; };
+		ADF04F6F2060B7A8009926E2 /* ConnectionResumeListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectionResumeListener.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C43A8031BDDDF1800D0597F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				46880B8319C43A87006E1F66 /* src */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				6FC1CA921CEAB89C00DCDC8E /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46880B8319C43A87006E1F66 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AD16B330205126380023620C /* sf */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		6FC1CA921CEAB89C00DCDC8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1CA8E1CEAB7D300DCDC8E /* server.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD16B330205126380023620C /* sf */ = {
+			isa = PBXGroup;
+			children = (
+				AD16B37A205126380023620C /* Macro.hpp */,
+				AD16B346205126380023620C /* Forward.hpp */,
+				AD16B331205126380023620C /* core */,
+				AD2FB39420591DAD00140ED7 /* connection */,
+				AD16B433205126810023620C /* data */,
+				AD16B347205126380023620C /* listeners */,
+				AD16B37B205126380023620C /* requests */,
+				AD16B388205126380023620C /* utils */,
+			);
+			path = sf;
+			sourceTree = "<group>";
+		};
+		AD16B331205126380023620C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				AD16B48720512A190023620C /* IBridge.hpp */,
+				AD16B332205126380023620C /* Bridge.cpp */,
+				AD16B333205126380023620C /* Bridge.hpp */,
+				AD16B337205126380023620C /* IEventDispatcher.hpp */,
+				AD16B334205126380023620C /* EventDispatcher.cpp */,
+				AD16B335205126380023620C /* EventDispatcher.hpp */,
+				AD16B338205126380023620C /* IListener.hpp */,
+				AD56C927205B62CA0011A0DB /* ILogger.hpp */,
+				AD56C930205B67940011A0DB /* Logger.cpp */,
+				AD56C931205B67940011A0DB /* Logger.hpp */,
+				AD56C92E205B65AD0011A0DB /* ILogManager.hpp */,
+				AD56C92A205B657E0011A0DB /* LogManager.cpp */,
+				AD56C92B205B657E0011A0DB /* LogManager.hpp */,
+				AD16B339205126380023620C /* IRequest.cpp */,
+				AD16B33A205126380023620C /* IRequest.hpp */,
+				AD16B497205137980023620C /* IRequestHandler.hpp */,
+				AD16B4912051374F0023620C /* RequestHandler.cpp */,
+				AD16B4922051374F0023620C /* RequestHandler.hpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		AD16B347205126380023620C /* listeners */ = {
+			isa = PBXGroup;
+			children = (
+				ADF04F622060B397009926E2 /* HandshakeListener.cpp */,
+				ADF04F632060B397009926E2 /* HandshakeListener.hpp */,
+				ADF04F662060B4BB009926E2 /* SocketErrorListener.cpp */,
+				ADF04F672060B4BB009926E2 /* SocketErrorListener.hpp */,
+				AD16B348205126380023620C /* ConnectionListener.cpp */,
+				AD16B349205126380023620C /* ConnectionListener.hpp */,
+				AD16B34A205126380023620C /* ConnectionLostListener.cpp */,
+				AD16B34B205126380023620C /* ConnectionLostListener.hpp */,
+				ADF04F6A2060B623009926E2 /* ConnectionRetryListener.cpp */,
+				ADF04F6B2060B623009926E2 /* ConnectionRetryListener.hpp */,
+				ADF04F6E2060B7A8009926E2 /* ConnectionResumeListener.cpp */,
+				ADF04F6F2060B7A8009926E2 /* ConnectionResumeListener.hpp */,
+				AD16B34C205126380023620C /* ExtensionResponseListener.cpp */,
+				AD16B34D205126380023620C /* ExtensionResponseListener.hpp */,
+				AD16B34E205126380023620C /* LoginErrorListener.cpp */,
+				AD16B34F205126380023620C /* LoginErrorListener.hpp */,
+				AD16B350205126380023620C /* LoginListener.cpp */,
+				AD16B351205126380023620C /* LoginListener.hpp */,
+				AD16B352205126380023620C /* LogoutListener.cpp */,
+				AD16B353205126380023620C /* LogoutListener.hpp */,
+				AD16B354205126380023620C /* PingPongListener.cpp */,
+				AD16B355205126380023620C /* PingPongListener.hpp */,
+				AD16B356205126380023620C /* RoomAddListener.cpp */,
+				AD16B357205126380023620C /* RoomAddListener.hpp */,
+				AD16B358205126380023620C /* RoomCreationErrorListener.cpp */,
+				AD16B359205126380023620C /* RoomCreationErrorListener.hpp */,
+				AD16B35A205126380023620C /* RoomJoinErrorListener.cpp */,
+				AD16B35B205126380023620C /* RoomJoinErrorListener.hpp */,
+				AD16B35C205126380023620C /* RoomJoinListener.cpp */,
+				AD16B35D205126380023620C /* RoomJoinListener.hpp */,
+				AD16B35E205126380023620C /* RoomRemoveListener.cpp */,
+				AD16B35F205126380023620C /* RoomRemoveListener.hpp */,
+				AD16B360205126380023620C /* SetRoomVariablesListener.cpp */,
+				AD16B361205126380023620C /* SetRoomVariablesListener.hpp */,
+				AD16B362205126380023620C /* SetUserVariablesListener.cpp */,
+				AD16B363205126380023620C /* SetUserVariablesListener.hpp */,
+				AD16B364205126380023620C /* UserEnterRoomListener.cpp */,
+				AD16B365205126380023620C /* UserEnterRoomListener.hpp */,
+				AD16B366205126380023620C /* UserExitRoomListener.cpp */,
+				AD16B367205126380023620C /* UserExitRoomListener.hpp */,
+			);
+			path = listeners;
+			sourceTree = "<group>";
+		};
+		AD16B37B205126380023620C /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				AD16B37C205126380023620C /* KeepAliveRequest.cpp */,
+				AD16B37D205126380023620C /* KeepAliveRequest.hpp */,
+				AD16B37E205126380023620C /* RemoveUserRequest.cpp */,
+				AD16B37F205126380023620C /* RemoveUserRequest.hpp */,
+				AD16B380205126380023620C /* SetGoldRequest.cpp */,
+				AD16B381205126380023620C /* SetGoldRequest.hpp */,
+				AD16B382205126380023620C /* SetRubyRequest.cpp */,
+				AD16B383205126380023620C /* SetRubyRequest.hpp */,
+				AD16B384205126380023620C /* UpdateDataRequest.cpp */,
+				AD16B385205126380023620C /* UpdateDataRequest.hpp */,
+				AD16B386205126380023620C /* DataRequest.cpp */,
+				AD16B387205126380023620C /* DataRequest.hpp */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		AD16B388205126380023620C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD16B389205126380023620C /* AsyncManager.hpp */,
+				AD16B38A205126380023620C /* BiMap.hpp */,
+				AD2FB39520591DEA00140ED7 /* ExponentialBackoffOptions.cpp */,
+				AD2FB39620591DEA00140ED7 /* ExponentialBackoffOptions.hpp */,
+				AD2FB3992059206700140ED7 /* ExponentialBackoff.cpp */,
+				AD2FB39A2059206700140ED7 /* ExponentialBackoff.hpp */,
+				AD2FB39D205928F000140ED7 /* RandomHelper.cpp */,
+				AD2FB39E205928F000140ED7 /* RandomHelper.hpp */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		AD16B433205126810023620C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				AD05A9D2205A319C004FD335 /* IDataResolver.hpp */,
+				AD05A9CE205A3130004FD335 /* DataResolver.cpp */,
+				AD05A9CF205A3130004FD335 /* DataResolver.hpp */,
+				AD05A9D7205A51AD004FD335 /* IDataTransfer.hpp */,
+				AD05A9CA205A2FE2004FD335 /* DataSyncer.cpp */,
+				AD05A9CB205A2FE2004FD335 /* DataSyncer.hpp */,
+				AD05A9D3205A5148004FD335 /* DataFetcher.cpp */,
+				AD05A9D4205A5148004FD335 /* DataFetcher.hpp */,
+				AD05A9DB205A5512004FD335 /* DataPusher.cpp */,
+				AD05A9DC205A5512004FD335 /* DataPusher.hpp */,
+				AD16B445205126810023620C /* SFGoldObserver.cpp */,
+				AD16B446205126810023620C /* SFGoldObserver.hpp */,
+				AD16B449205126810023620C /* SFRubyObserver.cpp */,
+				AD16B44A205126810023620C /* SFRubyObserver.hpp */,
+				AD16B43B205126810023620C /* IData.hpp */,
+				AD16B44B205126810023620C /* Data.cpp */,
+				AD16B44C205126810023620C /* Data.hpp */,
+				AD16B43C205126810023620C /* IProperty.hpp */,
+				AD16B44D205126810023620C /* Property.cpp */,
+				AD16B44E205126810023620C /* Property.hpp */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		AD2FB39420591DAD00140ED7 /* connection */ = {
+			isa = PBXGroup;
+			children = (
+				AD16B43A205126810023620C /* IConnectionManager.hpp */,
+				AD16B43F205126810023620C /* ConnectionManager.cpp */,
+				AD16B440205126810023620C /* ConnectionManager.hpp */,
+				AD16B438205126810023620C /* IConnection.hpp */,
+				AD2FB3A72059306C00140ED7 /* GuardedConnection.cpp */,
+				AD2FB3A82059306C00140ED7 /* GuardedConnection.hpp */,
+				AD16B441205126810023620C /* ServerConnection.cpp */,
+				AD16B442205126810023620C /* ServerConnection.hpp */,
+				AD16B439205126810023620C /* ILoginInfo.hpp */,
+				AD16B447205126810023620C /* LoginFlow.cpp */,
+				AD16B448205126810023620C /* LoginFlow.hpp */,
+				ADA19A4920526DE5002BAB67 /* LogoutFlow.cpp */,
+				ADA19A4A20526DE5002BAB67 /* LogoutFlow.hpp */,
+				AD2FB3A520592DD800140ED7 /* ConnectionState.hpp */,
+			);
+			path = connection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C1952961C44E97F00185F01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD16B3F1205126390023620C /* UserExitRoomListener.hpp in Headers */,
+				AD16B467205126810023620C /* ConnectionManager.hpp in Headers */,
+				AD16B46B205126810023620C /* ServerConnection.hpp in Headers */,
+				AD16B3C9205126390023620C /* LogoutListener.hpp in Headers */,
+				AD16B48820512A190023620C /* IBridge.hpp in Headers */,
+				AD05A9D6205A5148004FD335 /* DataFetcher.hpp in Headers */,
+				AD16B3CD205126390023620C /* PingPongListener.hpp in Headers */,
+				AD16B39B205126390023620C /* IRequest.hpp in Headers */,
+				AD16B498205137980023620C /* IRequestHandler.hpp in Headers */,
+				AD16B45B205126810023620C /* IConnectionManager.hpp in Headers */,
+				AD16B457205126810023620C /* IConnection.hpp in Headers */,
+				AD56C92F205B65AD0011A0DB /* ILogManager.hpp in Headers */,
+				AD2FB3AA2059306C00140ED7 /* GuardedConnection.hpp in Headers */,
+				AD16B42F205126390023620C /* AsyncManager.hpp in Headers */,
+				AD16B459205126810023620C /* ILoginInfo.hpp in Headers */,
+				AD16B3E1205126390023620C /* RoomRemoveListener.hpp in Headers */,
+				AD16B47F205126810023620C /* Data.hpp in Headers */,
+				ADF04F712060B7A8009926E2 /* ConnectionResumeListener.hpp in Headers */,
+				AD16B41D205126390023620C /* RemoveUserRequest.hpp in Headers */,
+				AD16B395205126390023620C /* IEventDispatcher.hpp in Headers */,
+				AD16B3D5205126390023620C /* RoomCreationErrorListener.hpp in Headers */,
+				AD16B42D205126390023620C /* DataRequest.hpp in Headers */,
+				AD16B3B5205126390023620C /* ConnectionListener.hpp in Headers */,
+				AD16B3D1205126390023620C /* RoomAddListener.hpp in Headers */,
+				AD05A9D8205A51AD004FD335 /* IDataTransfer.hpp in Headers */,
+				AD16B3BD205126390023620C /* ExtensionResponseListener.hpp in Headers */,
+				AD2FB39C2059206700140ED7 /* ExponentialBackoff.hpp in Headers */,
+				AD16B397205126390023620C /* IListener.hpp in Headers */,
+				AD16B415205126390023620C /* Macro.hpp in Headers */,
+				AD16B45D205126810023620C /* IData.hpp in Headers */,
+				AD16B3E9205126390023620C /* SetUserVariablesListener.hpp in Headers */,
+				ADF04F652060B397009926E2 /* HandshakeListener.hpp in Headers */,
+				AD16B429205126390023620C /* UpdateDataRequest.hpp in Headers */,
+				AD16B391205126390023620C /* EventDispatcher.hpp in Headers */,
+				AD16B3ED205126390023620C /* UserEnterRoomListener.hpp in Headers */,
+				ADA19A4D20526DE5002BAB67 /* LogoutFlow.hpp in Headers */,
+				AD16B45F205126810023620C /* IProperty.hpp in Headers */,
+				AD56C92D205B657E0011A0DB /* LogManager.hpp in Headers */,
+				AD16B3C1205126390023620C /* LoginErrorListener.hpp in Headers */,
+				AD16B3B9205126390023620C /* ConnectionLostListener.hpp in Headers */,
+				AD16B3D9205126390023620C /* RoomJoinErrorListener.hpp in Headers */,
+				AD16B473205126810023620C /* SFGoldObserver.hpp in Headers */,
+				AD16B477205126810023620C /* LoginFlow.hpp in Headers */,
+				AD16B421205126390023620C /* SetGoldRequest.hpp in Headers */,
+				AD16B47B205126810023620C /* SFRubyObserver.hpp in Headers */,
+				AD16B38D205126390023620C /* Bridge.hpp in Headers */,
+				AD16B3B1205126390023620C /* Forward.hpp in Headers */,
+				AD16B431205126390023620C /* BiMap.hpp in Headers */,
+				AD56C929205B62CA0011A0DB /* ILogger.hpp in Headers */,
+				ADF04F692060B4BB009926E2 /* SocketErrorListener.hpp in Headers */,
+				AD2FB3A0205928F000140ED7 /* RandomHelper.hpp in Headers */,
+				AD05A9D1205A3130004FD335 /* DataResolver.hpp in Headers */,
+				AD16B4952051374F0023620C /* RequestHandler.hpp in Headers */,
+				AD2FB39820591DEA00140ED7 /* ExponentialBackoffOptions.hpp in Headers */,
+				AD56C933205B67940011A0DB /* Logger.hpp in Headers */,
+				AD16B3E5205126390023620C /* SetRoomVariablesListener.hpp in Headers */,
+				AD16B483205126810023620C /* Property.hpp in Headers */,
+				AD16B425205126390023620C /* SetRubyRequest.hpp in Headers */,
+				AD05A9DE205A5512004FD335 /* DataPusher.hpp in Headers */,
+				AD16B3DD205126390023620C /* RoomJoinListener.hpp in Headers */,
+				AD05A9CD205A2FE2004FD335 /* DataSyncer.hpp in Headers */,
+				AD2FB3A620592DD800140ED7 /* ConnectionState.hpp in Headers */,
+				ADF04F6D2060B623009926E2 /* ConnectionRetryListener.hpp in Headers */,
+				AD16B3C5205126390023620C /* LoginListener.hpp in Headers */,
+				AD16B419205126390023620C /* KeepAliveRequest.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C43A8051BDDDF1800D0597F /* server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C43A80D1BDDDF1900D0597F /* Build configuration list for PBXNativeTarget "server" */;
+			buildPhases = (
+				6C43A8021BDDDF1800D0597F /* Sources */,
+				6C43A8031BDDDF1800D0597F /* Frameworks */,
+				6C43A8041BDDDF1800D0597F /* Copy Files */,
+				6C1952961C44E97F00185F01 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = server;
+			productName = "ee-library";
+			productReference = 6FC1CA8E1CEAB7D300DCDC8E /* server.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					6C43A8051BDDDF1800D0597F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "server" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C43A8051BDDDF1800D0597F /* server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C43A8021BDDDF1800D0597F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD16B3EB205126390023620C /* UserEnterRoomListener.cpp in Sources */,
+				AD16B423205126390023620C /* SetRubyRequest.cpp in Sources */,
+				AD16B3D3205126390023620C /* RoomCreationErrorListener.cpp in Sources */,
+				AD56C92C205B657E0011A0DB /* LogManager.cpp in Sources */,
+				AD16B481205126810023620C /* Property.cpp in Sources */,
+				AD16B417205126390023620C /* KeepAliveRequest.cpp in Sources */,
+				AD16B47D205126810023620C /* Data.cpp in Sources */,
+				AD16B38B205126390023620C /* Bridge.cpp in Sources */,
+				AD16B3DB205126390023620C /* RoomJoinListener.cpp in Sources */,
+				AD16B471205126810023620C /* SFGoldObserver.cpp in Sources */,
+				AD2FB39B2059206700140ED7 /* ExponentialBackoff.cpp in Sources */,
+				AD16B3C3205126390023620C /* LoginListener.cpp in Sources */,
+				AD16B3BB205126390023620C /* ExtensionResponseListener.cpp in Sources */,
+				ADA19A4B20526DE5002BAB67 /* LogoutFlow.cpp in Sources */,
+				AD2FB39720591DEA00140ED7 /* ExponentialBackoffOptions.cpp in Sources */,
+				AD16B3BF205126390023620C /* LoginErrorListener.cpp in Sources */,
+				AD16B3B7205126390023620C /* ConnectionLostListener.cpp in Sources */,
+				AD16B38F205126390023620C /* EventDispatcher.cpp in Sources */,
+				AD05A9D5205A5148004FD335 /* DataFetcher.cpp in Sources */,
+				AD56C932205B67940011A0DB /* Logger.cpp in Sources */,
+				ADF04F702060B7A8009926E2 /* ConnectionResumeListener.cpp in Sources */,
+				AD16B3E3205126390023620C /* SetRoomVariablesListener.cpp in Sources */,
+				AD16B3CF205126390023620C /* RoomAddListener.cpp in Sources */,
+				AD2FB3A92059306C00140ED7 /* GuardedConnection.cpp in Sources */,
+				AD16B3D7205126390023620C /* RoomJoinErrorListener.cpp in Sources */,
+				AD05A9CC205A2FE2004FD335 /* DataSyncer.cpp in Sources */,
+				AD05A9D0205A3130004FD335 /* DataResolver.cpp in Sources */,
+				AD16B475205126810023620C /* LoginFlow.cpp in Sources */,
+				ADF04F642060B397009926E2 /* HandshakeListener.cpp in Sources */,
+				AD16B3EF205126390023620C /* UserExitRoomListener.cpp in Sources */,
+				AD16B399205126390023620C /* IRequest.cpp in Sources */,
+				AD16B48A20512BA60023620C /* ServerConnection.cpp in Sources */,
+				AD16B48F205131210023620C /* ConnectionManager.cpp in Sources */,
+				AD05A9DD205A5512004FD335 /* DataPusher.cpp in Sources */,
+				AD16B4932051374F0023620C /* RequestHandler.cpp in Sources */,
+				AD16B3CB205126390023620C /* PingPongListener.cpp in Sources */,
+				AD16B427205126390023620C /* UpdateDataRequest.cpp in Sources */,
+				AD16B3C7205126390023620C /* LogoutListener.cpp in Sources */,
+				AD16B3DF205126390023620C /* RoomRemoveListener.cpp in Sources */,
+				AD16B486205126970023620C /* SFRubyObserver.cpp in Sources */,
+				AD16B3B3205126390023620C /* ConnectionListener.cpp in Sources */,
+				AD16B42B205126390023620C /* DataRequest.cpp in Sources */,
+				AD2FB39F205928F000140ED7 /* RandomHelper.cpp in Sources */,
+				AD16B41B205126390023620C /* RemoveUserRequest.cpp in Sources */,
+				ADF04F682060B4BB009926E2 /* SocketErrorListener.cpp in Sources */,
+				AD16B41F205126390023620C /* SetGoldRequest.cpp in Sources */,
+				ADF04F6C2060B623009926E2 /* ConnectionRetryListener.cpp in Sources */,
+				AD16B3E7205126390023620C /* SetUserVariablesListener.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6C43A80E1BDDDF1900D0597F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-aligned-allocation-unavailable",
+				);
+				VALID_ARCHS = "i386 x86_64 armv7s arm64";
+			};
+			name = Debug;
+		};
+		6C43A80F1BDDDF1900D0597F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-aligned-allocation-unavailable",
+				);
+				VALID_ARCHS = "i386 x86_64 armv7s arm64";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../src",
+					"\"$(SRCROOT)/../../boost/include\"",
+					"\"$(SRCROOT)/../../smartfox/src\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../src",
+					"\"$(SRCROOT)/../../boost/include\"",
+					"\"$(SRCROOT)/../../smartfox/src\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LLVM_LTO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C43A80D1BDDDF1900D0597F /* Build configuration list for PBXNativeTarget "server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C43A80E1BDDDF1900D0597F /* Debug */,
+				6C43A80F1BDDDF1900D0597F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
